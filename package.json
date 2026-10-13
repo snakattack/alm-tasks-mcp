@@ -1,0 +1,43 @@
+{
+  "name": "almond-mcp-tasks",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial MCP server for Almond CRM tasks with secure local credentials and direct HTTP integration",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "bin": {
+    "almond-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "mcp.config.example.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "test": "npm run build && node --test --test-isolation=none test/*.test.mjs",
+    "smoke": "node --env-file-if-exists=.env scripts/smoke.mjs",
+    "prepack": "npm run build"
+  },
+  "optionalDependencies": {
+    "@napi-rs/keyring": "2.1.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "cheerio": "1.2.0",
+    "tough-cookie": "6.0.2",
+    "zod": "4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snakattack/alm-tasks-mcp.git"
+  }
+}

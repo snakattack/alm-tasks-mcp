@@ -1,0 +1,115 @@
+<div class="twin" data-tid="10081" style="--ph:215">
+<div class="tw-left">
+<section class="twhead">
+<div class="head-top">
+<div class="pills" data-z="head">
+<a class="hbt" href="/tasks" data-close="" aria-label="Закрыть">×</a>
+<button type="button" class="hbt" aria-label="Скопировать ссылку"></button></div>
+
+<div class="head-act" data-z="hact"><details class="tmenu"><summary aria-label="Меню задачи">⋯</summary><div class="tmenu-pop"><button type="button" class="tmi"><span class="mi"></span><span>Скопировать ссылку на задачу</span></button><form method="post" action="/tasks/10081/copy"><button class="tmi"><span class="mi"></span><span>Копировать задачу</span></button></form><div class="tmi-sep"></div><details class="tmi-sub"><summary class="tmi"><span class="mi"></span><span>Сменить проект</span><i class="tmi-chev">›</i></summary><div class="tmi-projects"><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-1"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 1</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-2"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 2</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-3"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 3</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-4"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 4</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-5"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 5</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-6"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 6</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-7"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 7</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-8"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 8</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-9"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 9</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-10"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 10</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-11"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 11</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-12"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 12</button></form><form method="post" action="/tasks/10081/project"><input type="hidden" name="project_key" value="test-project-13"><button class="tmi tmi-proj"><span class="dot"></span>Тестовый проект 13</button></form></div></details></div></details></div></div>
+
+<div data-z="title" class="zwrap">
+<h1 class="task-title" id="ttl-h" data-editable="1">Тест задача</h1><form id="ttl-form" class="ttl-edit" method="post" action="/tasks/10081/title" hidden=""><textarea id="ttl-input" name="title" rows="1" maxlength="300" required="">Тест задача</textarea></form>
+<div class="task-sub">#10081 · <a href="/p/test-project">Тестовый проект</a> · <a href="/p/test-project/tasks" class="tosub">к доске →</a></div>
+</div>
+</section>
+<div class="tw-scroll">
+
+<div data-z="blk" class="zwrap"></div>
+
+<section class="card dblock" data-z="descr"><div class="dsec"><div class="dsec-h">Описание</div>
+<div id="desc-view" class="deditable" data-editable="1"><div><div class="dl">Проверка описания</div></div>
+</div>
+<form id="desc-form" method="post" action="/tasks/10081/descr" hidden="">
+
+
+<input type="file" data-dimg="" accept="image/*" multiple="" hidden="">
+<div class="dfield"><textarea name="descr" data-draft="descr" rows="14">Проверка описания</textarea>
+</div>
+<div class="dprev" hidden=""></div>
+<div><button class="btn g">Сохранить</button><button type="button" class="btn o" id="desc-cancel">Отмена</button></div></form>
+</div>
+<div class="dsec"><div class="dsec-h">Критерии приёмки</div>
+<div id="crit-view" class="deditable" data-editable="1"><span class="muted">Критерии приёмки не заполнены — нажмите, чтобы добавить; по ним примут работу, обязательно, чтобы выпустить задачу из «Разбора».</span>
+</div>
+<form id="crit-form" method="post" action="/tasks/10081/criteria" hidden="">
+<textarea name="criteria" rows="3" placeholder="По чему примут работу — измеримо (в индексе · schema валидна · позиция ≤ N)."></textarea>
+<div><button class="btn g">Сохранить</button><button type="button" class="btn o" id="crit-cancel">Отмена</button></div></form>
+</div><div class="dsec"><div class="dsec-h">Чек-лист</div><form method="post" action="/tasks/10081/check/add"><textarea name="text" rows="1" required="" placeholder="+ пункт (или вставьте список)"></textarea><button class="btn o">Добавить</button></form></div><div class="dsec"><div class="dsec-h">Файлы задачи</div><form method="post" action="/tasks/10081/att/add" enctype="multipart/form-data" class="inline"><label class="btn o"> Прикрепить файл<input type="file" name="file" multiple=""></label></form></div></section>
+
+<section class="card meta" data-z="meta">
+<div class="irow"><span class="ilbl">Постановщик</span><span class="ival"><img class="av" src="/avatar/1?v=test" alt=""><a href="/u/test-user"><b>Исполнитель</b></a></span></div>
+<div class="irow"><span class="ilbl">Исполнитель</span><span class="ival"><details class="ie asf"><summary class="aspick"><img class="av" src="/avatar/1?v=test" alt=""><b>Исполнитель</b><span class="aspen" aria-hidden="true"></span></summary></details><a class="planlink" href="/u/test-user" target="_blank" rel="noopener noreferrer" data-tip="Личный план сотрудника" aria-label="Личный план сотрудника"></a></span></div>
+
+<div class="irow"><span class="ilbl">Крайний срок</span><span class="ival"><button type="button" class="due-pill  none" id="dueBtn" data-due=""> срок не задан</button></span></div>
+<div class="irow"><span class="ilbl">Статус</span><span class="ival"><span class="dd"><button type="button" class="dd-btn" id="stBtn">На проверке</button><div class="dd-menu" id="stMenu" hidden=""></div></span><form method="post" action="/tasks/10081/status" id="stForm" class="inline" hidden=""><input type="hidden" name="status" id="stVal"></form></span></div>
+<div class="irow"><span class="ilbl">Создана</span><span class="ival">сегодня в 23:14 · вручную</span></div>
+<form method="post" action="/tasks/10081/due" id="dueForm" hidden=""><input type="hidden" name="due" id="dueVal"><input type="hidden" name="preset" id="duePreset"><input type="hidden" name="clear" id="dueClear"></form>
+</section>
+
+<section class="card" data-z="class"><div class="pad"><div class="dsec-h">Тип и приоритет</div><form method="post" action="/tasks/10081/classify" class="clsf">
+<select name="task_type" aria-label="Тип задачи" class="empty"><option value="">— тип —</option><option value="tech">Техничка</option><option value="content">Контент</option><option value="links">Ссылки</option><option value="local">Локальное</option><option value="cro">CRO</option><option value="ymyl">YMYL</option></select>
+<select name="impact" aria-label="Влияние" class="empty"><option value="0">влияние —</option><option value="3">влияние: высокое</option><option value="2">влияние: среднее</option><option value="1">влияние: низкое</option></select>
+<select name="effort" aria-label="Объём" class="empty"><option value="0">объём —</option><option value="1">объём: быстро</option><option value="2">объём: день</option><option value="3">объём: крупная</option></select>
+<label class="urlfld"><span>Целевой URL</span><input type="url" name="target_url" value="" placeholder="https://example.ru/uslugi/stranica/" inputmode="url"></label>
+<div class="hint">Адрес страницы, которую правим. По нему система проверит индексацию, разметку и скорость.</div>
+<div class="gtags"><label class="gtag-pick"><input type="checkbox" name="tags" value="разработка"><span>разработка</span></label><label class="gtag-pick"><input type="checkbox" name="tags" value="контент"><span>контент</span></label><label class="gtag-pick"><input type="checkbox" name="tags" value="seo"><span>seo</span></label><label class="gtag-pick"><input type="checkbox" name="tags" value="дизайн"><span>дизайн</span></label><label class="gtag-pick"><input type="checkbox" name="tags" value="аккаунтинг"><span>аккаунтинг</span></label></div>
+<div class="hint">Тег — чей цех / чья очередь. Список общий на все проекты, правится в Настройках.</div>
+<span class="muted">Тип, влияние, объём, URL и теги сохраняются сразу при изменении</span>
+<span class="muted">изменения полей выше</span></form></div></section>
+
+<div data-z="res" class="zwrap">
+
+<div class="panel"><div class="muted">Результат</div><div>тест текст сдачи</div></div>
+</div>
+
+<div data-z="idx" class="zwrap">
+
+</div>
+
+<section class="card" data-z="proj"><div class="irow"><span class="ilbl">Проект</span><span class="ival"><span class="av">RE</span><a href="/p/test-project/tasks"><b>Тестовый проект</b></a><a class="psite" href="https://example.test" target="_blank" rel="noopener noreferrer"><span>example.test</span></a></span></div></section>
+
+<section class="card" data-z="watch">
+<div class="pgroup"><div class="dsec-h">Наблюдатели</div><div class="plist"><span class="muted">пока нет</span></div>
+<div class="pacts"><details class="ie wadd" data-keepopen="wadd"><summary class="asadd">+ наблюдатель</summary></details> <form method="post" action="/tasks/10081/watch" class="inline"><input type="hidden" name="follow" value="follow"><button class="btn o">Следить</button></form></div></div>
+<div class="pgroup"><div class="dsec-h">Уведомления мне</div><form class="inline" method="post" action="/tasks/10081/sub"><span class="subseg"><button name="mode" value="normal" class="sseg on">обычно</button><button name="mode" value="all" class="sseg">слать всё</button><button name="mode" value="mute" class="sseg">не беспокоить</button></span></form></div>
+</section>
+</div>
+
+<div class="tw-actions" data-z="acts"><form class="inline" method="post" action="/tasks/10081/accept"><button class="btn-act good">Принять — готово</button></form><details class="fin-dd"><summary class="btn-act">Вернуть в работу</summary><form method="post" action="/tasks/10081/reopen" class="fin-pop"><input name="comment" required="" placeholder="что именно не так — исполнитель увидит первым"><button class="btn o">Вернуть с причиной</button></form></details><span class="muted">исполнитель сдал — проверь результат</span><details class="fin-dd"><summary class="btn-act block">Заблокировать</summary><form method="post" action="/tasks/10081/block" class="fin-pop"><select name="wait" required=""><option value="" disabled="" selected="">кого/что ждём</option><option value="client">клиента</option><option value="index">индексацию</option><option value="dev">разработку</option><option value="access">доступы</option><option value="other">внешнее</option></select><input name="reason" placeholder="Подробнее (необязательно): что именно ждём…"><div><button class="btn o">Пометить «ждём»</button><span class="muted">Уйдёт из счёта «В работе» на доске.</span></div></form></details><form class="inline" method="post" action="/tasks/10081/trash" data-del="Задача в корзине"><button class="btn-act danger"> В корзину</button></form></div>
+</div>
+<div class="tw-chat">
+<div class="cli-tabs">
+<button type="button" class="cli-tab on" data-pane="chat">Обсуждение</button>
+<button type="button" class="cli-tab" data-pane="client">Клиент</button>
+</div>
+<div class="cli-pane on" id="pane-chat">
+
+
+<div class="chat-search" id="chatSearch" hidden="">
+<input type="text" id="chatSearchInp" placeholder="Поиск по сообщениям чата…" autocomplete="off"></div>
+<div class="cscroll" id="taskchat" data-thread="10081" data-chat="main"><div class="cday">Сегодня</div><div class="cmsg me" id="m48337" data-mid="48337" data-rev="|" data-au="Тестовый Исполнитель"><img class="cav" src="/avatar/1?v=test" alt="" data-uon="Исполнитель"><div class="cbub"><div class="ctxt">Тест комментарий</div><div class="ctm">23:16</div>
+<div class="cact"><span data-t="Тест комментарий"></span></div></div></div><div class="cev" data-mid="48338">Тестовый Исполнитель сдал на контроль · <span class="cet">23:18</span></div></div>
+<form id="fwdbar" class="fwdbar" method="post" action="/tasks/10081/comment/forward" hidden=""><input type="hidden" name="ids" id="fwdids" value=""><b>Выберите сообщения</b><span class="muted" id="fwdn">ничего не выбрано</span><button type="submit" class="fwd-go" id="fwdgo" disabled="">Переслать в чат проекта</button><button type="button" class="fwd-x" id="fwdx">Отмена</button></form>
+<div id="creplybar" class="creplybar"><span class="crb-arrow"></span>
+<span class="crb-body"><b id="crb-au"></b> <span id="crb-tx" class="muted"></span></span>
+<button type="button" class="crb-x"></button></div>
+<div id="ceditbar" class="creplybar"><span class="crb-arrow"></span>
+<span class="crb-body"><b>Редактирование</b> <span id="cedit-tx" class="muted"></span></span>
+<button type="button" class="crb-x"></button></div>
+
+
+<form method="post" action="/tasks/10081/comment" class="cbar" enctype="multipart/form-data">
+<input type="hidden" name="reply_to" id="creply" value="">
+<input type="hidden" name="reply_quote" id="creplyq" value="">
+<label class="cclip">
+<input type="file" name="file" multiple=""></label>
+<textarea name="text" id="ctext" data-draft="chat" rows="1" placeholder="Напишите сообщение…  @ — упомянуть" autocomplete="off"></textarea>
+<span id="cfn" class="cfn"></span>
+<button type="button" class="ccode-btn" aria-label="Вставить блок кода"></button>
+<details class="epick" id="epick"><summary></summary>
+<div class="epick-pop"><button type="button" data-e="😀">😀</button><button type="button" data-e="😁">😁</button><button type="button" data-e="😂">😂</button><button type="button" data-e="🤣">🤣</button><button type="button" data-e="😊">😊</button><button type="button" data-e="🙂">🙂</button><button type="button" data-e="😉">😉</button><button type="button" data-e="😍">😍</button><button type="button" data-e="🥰">🥰</button><button type="button" data-e="😘">😘</button><button type="button" data-e="😎">😎</button><button type="button" data-e="🤔">🤔</button><button type="button" data-e="🙄">🙄</button><button type="button" data-e="😴">😴</button><button type="button" data-e="😢">😢</button><button type="button" data-e="😭">😭</button><button type="button" data-e="😡">😡</button><button type="button" data-e="😱">😱</button><button type="button" data-e="🤯">🤯</button><button type="button" data-e="🤝">🤝</button><button type="button" data-e="👍">👍</button><button type="button" data-e="👎">👎</button><button type="button" data-e="👌">👌</button><button type="button" data-e="🙏">🙏</button><button type="button" data-e="👏">👏</button><button type="button" data-e="💪">💪</button><button type="button" data-e="🔥">🔥</button><button type="button" data-e="❤️">❤️</button><button type="button" data-e="💔">💔</button><button type="button" data-e="💯">💯</button><button type="button" data-e="🎉">🎉</button><button type="button" data-e="✨">✨</button><button type="button" data-e="✅">✅</button><button type="button" data-e="❌">❌</button><button type="button" data-e="⚡">⚡</button><button type="button" data-e="🚀">🚀</button><button type="button" data-e="👀">👀</button><button type="button" data-e="🫡">🫡</button><button type="button" data-e="🤦">🤦</button><button type="button" data-e="🤷">🤷</button></div></details>
+<button class="iconbtn send"></button></form>
+</div>
+
+</div></div>

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "almond-tasks": {
+      "command": "node",
+      "args": [
+        "--env-file=/ABSOLUTE/PATH/alm-tasks-mcp/.env",
+        "/ABSOLUTE/PATH/alm-tasks-mcp/dist/index.js"
+      ]
+    }
+  }
+}

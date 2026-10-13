@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npm audit --omit=dev --audit-level=low
+      - name: Verify package contents
+        run: |
+          npm pack --dry-run --json > "$RUNNER_TEMP/pack.json"
+          node -e "const files = require(process.env.RUNNER_TEMP + '/pack.json')[0].files.map(file => file.path); if (!files.includes('README.md') || !files.includes('dist/index.js') || files.some(file => /^(docs|src|test)\//.test(file) || /^\.env/.test(file))) process.exit(1)"
